@@ -1,0 +1,1 @@
+./logisim | python seven-seg.py
