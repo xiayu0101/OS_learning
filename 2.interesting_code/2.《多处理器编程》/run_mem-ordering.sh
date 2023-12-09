@@ -1,0 +1,1 @@
+gcc mem-ordering.c -lpthread && ./a.out | head -n 100000 | sort | uniq -c

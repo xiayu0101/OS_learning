@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
 project(OS_learning)
+include_directories(./utils)
 add_subdirectory(1.base_knowledge)
 add_subdirectory(2.interesting_code)
