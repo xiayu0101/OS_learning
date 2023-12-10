@@ -1,0 +1,1 @@
+python3 ./model-checker.py ./mutex-bad.py  | python3 visualize.py > a.html
