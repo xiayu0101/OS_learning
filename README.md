@@ -13,7 +13,6 @@ my operation system learning
 1. 防御性编程（check、-fsanitize=address、-fsanitiize=thread、-fwrapv、print）、perf
 
 
-
 ## less usage
 ```
 /字符串：向下搜索"字符串"的功能
