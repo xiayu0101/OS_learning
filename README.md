@@ -3,14 +3,16 @@ my operation system learning
 
 
 ## todo
-1. 学会google，学会查手册
-2. vim tmux grep gcc man tldr binutils(objdump) gdb strace perf
-3. 阅读model_checker和visualize.py.spinlock-xv6.c
-4. 实现协程、futex、job queue dag
-5. 阅读qemu
+1. 学会google，**学会查手册(好难O_o)**和man tldr
+2. 阅读model_checker和visualize.py.spinlock-xv6.c
+4. 实现协程、使用qemu/liunx-minimal.zip
+5. make thread-os.c abstract-machines
+6. DAG -> 一个小的DAG框架(https://github.com/ChunelFeng/CGraph)->paddlepaddle
 
 ## read everyday
-1. 防御性编程（check、-fwrapv、print）、perf
+1. 防御性编程（check、-fsanitize=address、-fsanitiize=thread、-fwrapv、print）、perf
+
+## 
 
 
 ## less usage
@@ -184,6 +186,9 @@ quit (q)	终止调试。
 info inferiors 显示GDB调试的所有inferior(每一个被调试程序的执行状态记录在一个名为inferior的结构中，一般情况下一个inferior对应一个进程)，GDB会为他们分配进程ID,其中带有*的进程是正在调试的inferior
 layout src 显示源代码窗口
 layout asm 显示汇编窗口
+bt 栈
+wa watchpoint
+x 查看内存地址中的值
 ```
 
 ## pmap
@@ -192,13 +197,27 @@ cat /proc/进程号/maps
 
 
 ## vim
-vim - 从标准输入读取
 
+```asm
+vim - 从标准输入读取
 :set nowrap 取消自动折行––超出屏幕范围的文本将不会被显示，你需要向句末移动光标，以使屏幕水平滚动，查看一行的完整内容。
 :%! grep xxx 过滤行
+:%! grep -v xxx 反向过滤行
+v 进入普通可视模式
+CTRL_v 进入列可视模式
+V 进入行可视模式
+!%xxd 十六进制查看
+:{作用范围}s/{目标字符}/{替换的字符}/{替换标志} 例子:%s/, /\s将, 换成换行
+```
+
 ##file
 解析该文件的类型
 file a.out 
 
 ##readelf
 readelf -l main 查看可执行的 elf 文件程序头表信息
+
+##qemu
+```asm
+启动qemu后，ctrl + a + c可以进入monitor的界面，再次ctrl + a + c可以从monitor里退出，
+```

@@ -1,0 +1,1 @@
+gcc sum.c -lpthread -fsanitize=thread

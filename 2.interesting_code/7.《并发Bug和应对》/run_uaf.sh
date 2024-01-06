@@ -1,0 +1,1 @@
+gcc -g uaf.c -fsanitize=address
