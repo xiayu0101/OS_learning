@@ -12,7 +12,6 @@ my operation system learning
 ## read everyday
 1. 防御性编程（check、-fsanitize=address、-fsanitiize=thread、-fwrapv、print）、perf
 
-## 
 
 
 ## less usage
