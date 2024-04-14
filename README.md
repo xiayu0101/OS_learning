@@ -187,6 +187,7 @@ layout asm 显示汇编窗口
 bt 栈
 wa watchpoint
 x 查看内存地址中的值
+disass 打印汇编指令
 ```
 
 ## pmap
@@ -208,14 +209,14 @@ V 进入行可视模式
 :{作用范围}s/{目标字符}/{替换的字符}/{替换标志} 例子:%s/, /\s将, 换成换行
 ```
 
-##file
+## file
 解析该文件的类型
 file a.out 
 
-##readelf
+## readelf
 readelf -l main 查看可执行的 elf 文件程序头表信息
 
-##qemu
+## qemu
 ```asm
 启动qemu后，ctrl + a + c可以进入monitor的界面，再次ctrl + a + c可以从monitor里退出，
 ```

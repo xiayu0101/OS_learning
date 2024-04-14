@@ -1,0 +1,1 @@
+add_executable(lowbit lowbit.cpp)
