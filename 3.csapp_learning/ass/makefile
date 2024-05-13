@@ -6,5 +6,7 @@ CODE = ./memory/instruction.c ./disk/code.c ./cpu/mmu.c ./memory/dram.c ./main.c
 main:
 	$(CC) $(CFLAGS) -I. $(CODE) -o $(EXE)
 
+clean:
+	rm -rf *.o *~ ${EXE}
 run:
 	./${EXE}
