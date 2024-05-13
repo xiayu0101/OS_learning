@@ -26,7 +26,6 @@ unsigned IsLetter(unsigned x){
 }
 
 int main(){
-
     // segment array
     unsigned n = 7;
     printf("S[%u] = \n", n);
